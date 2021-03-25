@@ -48,7 +48,7 @@ def hello():
     market()
     return "market"
 
-@app.route("/")
+@appp.route("/")
 def hi():
     snapquote()
     return "snapquote"
@@ -56,11 +56,11 @@ def hi():
 
 def a():
     global app
-    app.run()
+    app.run(host='0.0.0.0', port=8080)
     
 def b():
     global appp
-    appp.run(host='0.0.0.0', port=8888)
+    appp.run()
 
 
 
@@ -73,6 +73,7 @@ if (__name__ == "__main__"):
     p1.start()
     # starting process 2
     p2.start()
-  
-    p1.join()
-    p2.join()
+    
+    
+    
+ 
