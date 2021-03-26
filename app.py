@@ -1,3 +1,8 @@
+"""
+HIDDEN JUST FOR TEST 
+
+
+
 #file_path :  quant/first5min/draft
 
 import alice_obj
@@ -74,6 +79,15 @@ if (__name__ == "__main__"):
     # starting process 2
     p2.start()
     
-    
-    
- 
+   HIDDEN JUST FOR TEST
+   """
+
+from flask import Flask
+@app.route("/")
+def hello():
+    return "vasanth akka"
+
+app = Flask(__name__)
+
+if (__name__ == "__main__"):
+    app.run()
