@@ -83,13 +83,14 @@ if (__name__ == "__main__"):
    """
 
 from flask import Flask
+import datetime
 
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "vasanth akka"
+    return datetime.datetime.utcnow().isoformat()
 
 
 if (__name__ == "__main__"):
