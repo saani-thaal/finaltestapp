@@ -1,3 +1,0 @@
-flask
-alice_blue
-pandas
